@@ -4,7 +4,7 @@ class StudentsController < ApplicationController
   def index
     @students = Student.all
   end
-
+#this redirect only worked here like this, not sure why
   def activate
     set_student.activate_student
     redirect_to student_path(@student.id)
